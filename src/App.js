@@ -47,15 +47,14 @@ function App() {
         </button>
       </div>
       <div className='listContainer'>
-        {myRecipe.map (element => (
-          <RecipesList key={element.index}
+        {myRecipe.map ((element, index) => (
+          <RecipesList key={index}
             label={element.recipe.label}
             image={element.recipe.image}
             calories={element.recipe.calories}
             mealType={element.recipe.mealType}
             cuisineType={element.recipe.cuisineType}
             ingredients={element.recipe.ingredientLines}
-            id={element.index}
             />
         ))}
       </div>

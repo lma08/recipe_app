@@ -13,8 +13,8 @@ function RecipesList ({id, label, image, calories, mealType, cuisineType, ingred
                 </div>
                 <div className="listContainer">
                     <ul><strong>Ingredients:</strong>
-                        {ingredients.map (ingredient => (
-                            <li key={id}>{ingredient}</li>
+                        {ingredients.map ((ingredient, index) => (
+                            <li key={index}>{ingredient}</li>
                         ))}
                     </ul>
                 </div>
