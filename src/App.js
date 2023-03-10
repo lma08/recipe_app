@@ -38,13 +38,13 @@ function App() {
         </video>
         <h1>Recipes for all occasions</h1>
       </div>
-      <div className='container'>
-        <form onSubmit={findRecipe}>
+      <div>
+        <form  className='container' onSubmit={findRecipe}>
           <input className='search' placeholder='Enter the ingredients...' onChange={myRecipeSearch} value={mySearch}/>
-        </form>
-        <button onClick={findRecipe}>
+          <button>
             <img className='icon' src="https://img.icons8.com/metro/26/null/search.png" alt='find icon'/>
-        </button>
+          </button>
+        </form>
       </div>
       <div className='listContainer'>
         {myRecipe.map ((element, index) => (
